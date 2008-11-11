@@ -80,4 +80,5 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.flatpages',
     'contact_form',
+    'articles',
 )
