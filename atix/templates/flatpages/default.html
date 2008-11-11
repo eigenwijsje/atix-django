@@ -1,10 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-    
-<head>
-    <title>atix | {{ flatpage.title }}</title>
-</head>
+{% extends "base.html" %}
 
-<body>
-    {{ flatpage.content|safe }} 
-</body>
+{% block title %}{{ flatpage.title }} | {{ block.super }}{% endblock %}
+
+{% block content %}
+    {{ flatpage.content|safe }}
+{% endblock %}
