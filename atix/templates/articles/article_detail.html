@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} | {{ block.super}}{% endblock %}
+
+{% block content %}
+<h2>{{ article.title }}</h2>
+
+<h3>{{ article.published|date:"j F Y"|title }}</h3>
+
+{{ article.intro|safe }}
+
+<hr noshade>
+
+{{ article.body|safe }}
+{% endblock %}
