@@ -5,5 +5,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     (r'^admin/(.*)', admin.site.root),
+    (r'^contact/', include('contact_form.urls')),
     (r'^articles/', include('articles.urls')),
 )
